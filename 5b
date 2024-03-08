@@ -1,0 +1,8 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+cars_data = pd.read_csv("Car_BarPlot.csv")
+cars = cars_data["Car"]
+data = cars_data["Sales"]
+fig = plt.figure(figsize =(10, 7))
+plt.pie(data, labels = cars)
+plt.show()
