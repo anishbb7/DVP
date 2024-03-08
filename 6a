@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+def linear_plot():
+ x = [1, 2, 3, 4, 5]
+ y = [3, 7, 9, 11, 14]
+ plt.plot(x, y, label='Linear Function: y = 2x')
+ plt.xlabel('X-axis')
+ plt.ylabel('Y-axis')
+ plt.title('Linear Plot Example')
+ plt.legend()
+ plt.show()
+linear_plot()
