@@ -1,0 +1,9 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+cars_data = pd.read_csv("Toyota.csv")
+plt.scatter(cars_data['Age'],cars_data['Price'],c='blue')
+plt.title('Scatter plot of Price vs Age of the Cars')
+plt.xlabel('Age (months)')
+plt.ylabel('Price (Euros)')
+plt.show()
